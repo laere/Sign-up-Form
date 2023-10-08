@@ -1,5 +1,8 @@
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 *, *:before, *:after {
@@ -12,4 +15,54 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
+}
+
+@font-face {
+    font-family: norse;
+    src: url(Norse-Bold.otf);
+}
+
+#content {
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    display: flex;
+}
+
+#left-content {
+    flex: 1 1 35%;
+    background-color: yellow;
+    background-image: url("bg.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#right-content {
+    flex: 1 1 65%;
+    background-color: green;
+
+}
+
+.banner {
+    background: rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 280px;
+}
+
+.banner-text {
+    color: white;
+    font-size: 80px;
+    font-family: norse;
+    margin-left: 12px;
+}
+
+.logo {
+    height: 90px;
+    width: 90px;
+    
 }
