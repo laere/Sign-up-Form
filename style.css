@@ -1,4 +1,4 @@
-html {
+html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,6 +7,12 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 button,
@@ -25,13 +31,11 @@ textarea {
 #content {
     height: 100vh;
     width: 100vw;
-    background-color: red;
     display: flex;
 }
 
 #left-content {
     flex: 1 1 35%;
-    background-color: yellow;
     background-image: url("bg.jpg");
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -40,9 +44,12 @@ textarea {
 
 #right-content {
     flex: 1 1 65%;
-    background-color: green;
-
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 247, 247);
 }
+
+/* LEFT SIDE */
 
 .banner {
     background: rgba(0, 0, 0, 0.5);
@@ -63,6 +70,41 @@ textarea {
 
 .logo {
     height: 90px;
-    width: 90px;
-    
+    width: 90px; 
+}
+
+/* RIGHT SIDE */
+
+.right-content-top {
+    flex: 1;
+}
+
+.right-content-bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* .form fieldset {
+    display: flex;
+} */
+
+.form {
+    display: flex;
+    flex: 1;
+}
+
+fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account {
+    flex: 1;
 }
