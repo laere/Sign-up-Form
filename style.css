@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-size: 1.25rem;
 }
 
 *, *:before, *:after {
@@ -23,6 +24,10 @@ textarea {
   font-size: 100%;
 }
 
+:root {
+    --marg-left: 40px;
+}
+
 @font-face {
     font-family: norse;
     src: url(Norse-Bold.otf);
@@ -34,22 +39,15 @@ textarea {
     display: flex;
 }
 
+/* LEFT SIDE */
+
 #left-content {
-    flex: 1 1 35%;
+    flex: 1 1 40%;
     background-image: url("bg.jpg");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#right-content {
-    flex: 1 1 65%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(236, 247, 247);
-}
-
-/* LEFT SIDE */
 
 .banner {
     background: rgba(0, 0, 0, 0.5);
@@ -75,36 +73,54 @@ textarea {
 
 /* RIGHT SIDE */
 
-.right-content-top {
-    flex: 1;
-}
+#right-content {
+    flex: 1 1 60%;
+    border-color: f9fafb;
 
-.right-content-bottom {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    justify-content: center;
+    gap: 48px; 
+}
+
+.right-content-txt-container {
+    font-size: 1.2rem;
+    width: 70%;
+    margin-left: var(--marg-left);
+}
+
+.tagline {
+    margin-top: 40px;
 }
 
 .form-container {
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 30px 0;
+}
+
+
+form {
+    font-size: 0.8rem;
+    display: flex;
+    margin-left: var(--marg-left);
+}
+
+form div {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    margin-top: 12px;
 }
 
-/* .form fieldset {
-    display: flex;
-} */
-
-.form {
-    display: flex;
-    flex: 1;
+.form-tagline {
+    margin-left: var(--marg-left);
 }
 
-fieldset div {
-    display: flex;
-    flex-direction: column;
+.create-account-container {
+    margin-left: var(--marg-left);
 }
 
-.create-account {
-    flex: 1;
+.create-account-btn {
+    margin-bottom: 24px;
 }
+
