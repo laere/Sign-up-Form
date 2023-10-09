@@ -25,53 +25,52 @@
                 <div>This is not a real online service! You know you need something
                     like this in your life to help realize your deepest dreams.
                 </div>
-                <div>Sign up <em>now</em> to get started.</div>
-                <div class="tagline">You <em>know</em> you want to.</div>
+                <div>Sign up <em><strong>now</strong></em> to get started.</div>
+                <div class="tagline">You <em><strong>know</strong></em> you want to.</div>
             </div>
 
-            <div class="form-container">
-                <div class="form-tagline">Let's do this!</div>
-                <form>
-                    <fieldset>
-                        <div>
-                            <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name" name="first_name" />
-                        </div>
-                        <div>
-                            <label for="email">EMAIL</label>
-                            <input type="text" id="email" name="email" />
-                        </div>
-                        <div>
-                            <label for="password">PASSWORD</label>
-                            <input type="text" id="password" name="password" />
-                        </div>
-                    </fieldset>
-                    <fieldset>
-                        <div>
-                            <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name" name="last_name" />
-                        </div>
-                        <div>
-                            <label for="tele">PHONE NUMBER</label>
-                            <input type="text" id="tele" name="tele" />
-                        </div>
-                        <div>
-                            <label for="password">CONFIRM PASSWORD</label>
-                            <input type="text" id="password" name="password" />
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-
-            <div class="create-account-container">
-                <button class="create-account-btn">Create Account</button>
-                <div class="create-account-txt">Already have an account? <a>Log in</a></div>
-            </div>
-
+            <form>
+                <div class="form-container">
+                    <div class="form-tagline">Let's do this!</div>
+                    <div class="fieldset-container">
+                        <fieldset>
+                            <div class="form-input">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" id="first_name" name="first_name" required>
+                            </div>
+                            <div class="form-input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-input">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-input">
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" id="last_name" name="last_name" required>
+                            </div>
+                            <div class="form-input">
+                                <label for="tele">PHONE NUMBER</label>
+                                <input type="number" id="tele" name="tele" required>
+                            </div>
+                            <div class="form-input">
+                                <label for="password">CONFIRM PASSWORD</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="create-account-container">
+                    <button type="submit" class="create-account-btn">Create Account</button>    
+                    <div class="create-account-txt">Already have an account? <a href="#">Log in</a></div>      
+                </div>
+            </form>
+            
         </div>
-
     </div>
-
 </body>
-
+<script src="script.js"></script>
 </html>
