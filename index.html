@@ -36,31 +36,31 @@
                         <fieldset>
                             <div class="form-input">
                                 <label for="first_name">FIRST NAME</label>
-                                <input type="text" id="first_name" name="first_name" required>
+                                <input type="text" id="first_name" name="first_name"  min="3" maxlength="16">
                             </div>
                             <div class="form-input">
                                 <label for="last_name">LAST NAME</label>
-                                <input type="text" id="last_name" name="last_name" required>
+                                <input type="text" id="last_name" name="last_name"  minlength="3" maxlength="16">
                             </div>
                         </fieldset>
                         <fieldset>
                             <div class="form-input">
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email"  >
                             </div>
                             <div class="form-input">
                                 <label for="tele">PHONE NUMBER</label>
-                                <input type="number" id="tele" name="tele" required>
+                                <input type="number" id="tele" name="tele"  minlength="9" maxlength="9">
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div class="form-input">
+                            <div class="form-input" id="password-input-wrapper">
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password" required>
+                                <input type="password" id="password" name="password" required minlength="8" maxlength="16">
                             </div>
                             <div class="form-input">
-                                <label for="password">CONFIRM PASSWORD</label>
-                                <input type="password" id="password" name="password" required>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required minlength="8" maxlength="16">
                             </div>
                         </fieldset>
                     </div>
