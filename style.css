@@ -166,6 +166,10 @@ input {
     border-radius: 4px;
 }
 
+input[type=text]:focus {
+    border: 1px solid #596D48;
+}
+
 /* 
 input:invalid {
     border: 1px solid red;
