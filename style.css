@@ -118,7 +118,6 @@ form {
 }
 
 .fieldset-container {
-    display: flex;
     margin-left: var(--marg-left);
 }
 
@@ -147,7 +146,11 @@ form {
    display: flex;
    flex-direction: column;
    margin-right: 80px;
-   margin-top: 16px;
+   margin-top: 20px;
+}
+
+fieldset {
+    display: flex;
 }
 
 a {
